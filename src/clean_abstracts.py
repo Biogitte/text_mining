@@ -1,10 +1,37 @@
 #!/usr/bin/env python3
 """Module to pre-processes PubMed/MedLine abstracts."""
-
 import re
 import pandas as pd
 import argparse
+import glob
+import os
 from src.pubmed_countries import country_dict
+
+
+def find_latest_csv(input_dir: str) -> str:
+    """
+    Returns the path to the newest CSV file of a given input directory.
+    :param input_dir: Input directory path.
+    """
+    list_of_files = glob.glob(f"{input_dir}/*.csv")
+    latest_csv = max(list_of_files, key=os.path.getctime)
+    return latest_csv
+
+
+def get_base_name(path: str) -> str:
+    """
+    Get the base name of a file or directory
+    :param path: Path to file or directory
+    :return name: Base name of file or directory
+    """
+    if os.path.isfile(path):
+        name = os.path.splitext(os.path.basename(path))[0]
+        return name
+    elif os.path.isdir(path):
+        name = os.path.basename(path)
+        return name
+    else:
+        return "File or directory does not exist"
 
 
 def replace_country(x: pd.DataFrame) -> pd.DataFrame:
@@ -20,7 +47,6 @@ def replace_country(x: pd.DataFrame) -> pd.DataFrame:
     return x
 
 
-# remove html tags in abstracts and titles
 def remove_html_tags(text: str) -> str:
     """Remove HTML-tags from a Pandas dataframe.
     :param text: Unprocessed text containing HTML-tags.
@@ -29,7 +55,7 @@ def remove_html_tags(text: str) -> str:
     return re.sub('<[^<]+?>', '', str(text))
 
 
-def preprocess_abstracts(raw_filename: str, clean_filename: str) -> None:
+def preprocess_abstracts(input_dir: str, out_dir: str, input_file=None, output_file=None) -> None:
     """Pre-process the latest raw PubMed data.
 
     1) Remove duplicate rows.
@@ -43,47 +69,53 @@ def preprocess_abstracts(raw_filename: str, clean_filename: str) -> None:
     7) Remove whitespaces in 'Title' and 'Abstract' columns.
     8) Reset dataframe index.
 
-    Pre-processed CSV file is saved with the following naming convention:
-    <date>_<clean_filename>.csv
-    :param raw_filename: Raw filename without date or extension.
-    :param clean_filename: Filename of the pre-processed file.
+    :param input_dir: Input directory.
+    :param out_dir: Output directory.
+    :param input_file: Optional input filename (i.e., only filename - not path).
+                       If not given, the newest CSV file of the input directory will be used.
+    :param output_file: Optional filename of the pre-processed file (i.e., only filename - not path).
+                        If not given, it will create a file name based on the newest CSV file in the
+                         input directory and add a "_clean" to the end before the CSV extension.
     """
-    df = pd.read_csv(raw_filename)
-    # remove duplicated rows
+
+    if input_file is None:
+        input_path = find_latest_csv(input_dir)
+    else:
+        input_path = f"{input_dir}/{input_file}"
+
+    df = pd.read_csv(input_path)
+
     df = df.drop_duplicates(subset={'Author', 'Title', 'Year', 'Country',
                                     'Journal', 'DOI', 'Abstract'})
-    # remove NaN rows in 'Abstract'
     df.dropna(subset=['Abstract'], inplace=True)
-    # set NaN/NA fields to 'Unknown'
     cols = ['Author', 'Title', 'DOI', 'Country', 'Journal']
     df[cols] = df[cols].fillna('Unknown')
-    # set NA of 'Year' to 0
     df['Year'].fillna(0, inplace=True)
-    # set year to integer
     df['Year'] = df['Year'].astype(int)
-    # homogenize 'Country' by applying replacement function to the data frame
     df['Country'] = df['Country'].apply(lambda x: replace_country(x))
-    # remove HTML tags in title and abstracts
     df['Abstract'] = df['Abstract'].apply(remove_html_tags)
     df['Title'] = df['Title'].apply(remove_html_tags)
-    # remove white spaces in Title
     df['Title'] = df['Title'].str.strip()
-    # remove white spaces in Abstracts
     df['Abstract'] = df['Abstract'].str.strip()
-    # reset index
     df = df.reset_index(drop=True)
-    # save file to csv
-    df.to_csv(f'{clean_filename}', header=True, index=False)
+
+    if output_file is None:
+        basename = get_base_name(input_path)
+        out_path = f"{out_dir}/{basename}_clean.csv"
+    else:
+        out_path = f"{out_dir}/{output_file}"
+    df.to_csv(f'{out_path}', header=True, index=False)
+
     # for manually updating the list of constants:
-    # (df['Country'].value_counts()).to_csv('country_cleanup.csv', header=True)
-    print(f'Pre-processed file saved as: {clean_filename}')
+    #(df['Country'].value_counts()).to_csv('country_cleanup.csv', header=True)
+    return None
 
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Preprocess PubMed abstracts')
-    parser.add_argument('raw_filename', help='Enter valid path.')
-    parser.add_argument('clean_filename', help='Enter CSV filename.')
+    parser.add_argument('input_dir', help='Enter valid path.')
+    parser.add_argument('out_dir', help='Enter valid path.')
+    parser.add_argument('input_file', nargs='?', help='Enter CSV filename (not path).')
+    parser.add_argument('output_file', nargs='?', help='Enter CSV filename (not path).')
     args = parser.parse_args()
-    print(args.raw_filename)
-    print(args.clean_filename)
-    preprocess_abstracts(args.raw_filename, args.clean_filename)
+    preprocess_abstracts(args.input_dir, args.out_dir, args.input_file, args.output_file)
