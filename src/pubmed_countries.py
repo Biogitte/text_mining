@@ -4,7 +4,7 @@
 # -*- coding: utf-8 -*-
 Afghanistan = ['Afghanistan']
 Albania = ['Albania']
-Algeria = ['Algeria']
+Algeria = ['Algeria', 'Algérie', 'Algérie. Electronic address: mohammedhadi.bestaoui@univ-tlemcen.dz']
 Andorra = ['Andorra']
 Angola = ['Angola']
 Antigua = ['Antigua and Barbuda']
@@ -13,14 +13,16 @@ Armenia = ['Armenia']
 Australia = ['Australia', 'Sydney', 'CSANZ', 'Queensland', 'Auckland',
              '4032', 'Melbourne', 'VIC', 'AU', 'Jen-Teh',
              'mcardona@bond.edu.au']
-Austria = ['Austria', 'Österreich']
+Austria = ['Austria', 'Österreich', 'Wien']
 Azerbaijan = ['Azerbaijan']
 Bahamas = ['Bahamas']
 Bahrain = ['Bahrain', 'BHR']
 Bangladesh = ['Bangladesh']
 Barbados = ['Barbados']
 Belarus = ['Belarus']
-Belgium = ['Belgium', 'Belgio', 'Belgique']
+Belgium = ['Belgium', 'Belgio', 'Belgique', 'Bruxelles', 'Châtelineau',
+           'B-1180 Bruxelles. abd.diabete@skynet.b', 'La Louvière', 'Belgiu',
+           'Université de Liège']
 Benin = ['Benin']
 Bhutan = ['Bhutan']
 Bolivia = ['Bolivia']
@@ -36,10 +38,10 @@ Canada = ['Canada', 'CMAJ', 'Ontario', 'British Columbia', 'H3G 1A4',
           'Hamilton', 'Ont', 'Ottawa', 'Toronto', 'V6T 1Z3', 'Manitoba',
           'V6H3V4', 'BC']
 Cambodia = ['Cambodia']
-Cameroon = ['Cameroon']
+Cameroon = ['Cameroon', 'Cameroun']
 Central_Africa = ['Central African Republic']
 Chad = ['Chad']
-Chile = ['Chile']
+Chile = ['Chile', 'Clínica Alemana-Universidad del Desarrollo']
 China = ['China', 'Anhui', 'Beijing', 'Chongqing', 'Fujian', 'Gansu',
          'Guangdong', 'Guangxi', 'Guizhou', 'Hainan', 'Hebei', 'Hong Kong',
          'Hubei', 'Hunan', 'Inner Mongolia', 'Jiangsu', 'Jiangxi', 'Jilin',
@@ -52,7 +54,8 @@ China = ['China', 'Anhui', 'Beijing', 'Chongqing', 'Fujian', 'Gansu',
          'Central South University', 'Xiamen', '430056',
          'Three Gorges University', 'Kong Red Cross Blood Transfusion Service',
          '510000', 'Harbin', 'Taiyuan', 'penghong66@csu.edu.cn',
-         'fmmuzhr@fmmu.edu.cn', '100871']
+         'fmmuzhr@fmmu.edu.cn', '100871', "unan Provincial People's Paediatric Medicine Center",
+         'Tongji Hospital']
 Colombia = ['Colombia']
 Congo = ['Congo', 'Congo (Brazzaville)', 'Congo (Kinshasa)', 'Brazzaville',
          'Kinshasa']
@@ -62,7 +65,7 @@ Croatia = ['Croatia', 'Turke', 'Zagreb', 'Osijek']
 # Turke - possible issue with Turkey
 Cuba = ['Cuba']
 Cyprus = ['Cyprus']
-Denmark = ['Denmark', 'lefja@rm.dk']
+Denmark = ['Denmark', 'lefja@rm.dk', 'Copenhagen', 'Odense', 'sbens@dadlnet.dk', 'Frederiksberg Hospital']
 Djibouti = ['Djibouti']
 Dominican_Republic = ['Dominican Republic', 'DOM']
 Ecuador = ['Ecuador']
@@ -79,7 +82,9 @@ Faroe = ['Faroe Islands']
 France = ['France', 'French Guiana', 'French Polynesia', 'Guadeloupe',
           'Mayotte', 'New Caledonia', 'Reunion', 'Saint Barthelemy',
           'St Martin', 'Martinique', 'Saint Pierre', 'Miquelon', '.fr',
-          'Lille', 'FR', 'Paris', 'Lyon', 'Saint-Andre Hospital']
+          'Lille', 'FR', 'Paris', 'Lyon', 'Saint-Andre Hospital', 'Bordeaux',
+          'Centre hospitalier', 'Clarmart', 'Angers', 'Bondy', '94276 Le Kremlin-Bicêtre',
+          '26953 Valence', 'F - 93143 Bondy Cedex', 'Dijon']
 Gabon = ['Gabon']
 Gambia = ['Gambia']
 Georgia = ['Georgia']
@@ -89,7 +94,10 @@ Germany = ['Germany', 'Deutschland', 'Berlin', 'Heidelberg', 'Dresden',
            'Klinik und Poliklinik für Hals-. Nasen- und Ohrenheilkunde',
            'Plastische und Ästhetische Chirurgie',
            'Köln', 'Mainz', 'Munich', '.de', 'Erkelenz', 'Münster',
-           'Angiologie und Pneumologie']
+           'Angiologie und Pneumologie', 'Giessen', 'Heinrich-Heine-Universität Düsseldorf',
+           'Allemagne. Rahlenbeck@hotmail.co', 'München. h.holzgreve@t-online.d', 'München',
+           'Städtischen Krankenhauses München-Schwabing', 'Langen', 'yn.-gebh. Abt. des KKH Wittmund',
+           'Universität Düsseldorf', 'Stuttgart']
 Ghana = ['Ghana']
 Greece = ['Greece', 'University Hospital of Patras', 'Patras.', 'GRC']
 Guatemala = ['Guatemala']
@@ -97,15 +105,17 @@ Guinea = ['Guinea']
 Guyana = ['Guyana']
 Haiti = ['Haiti']
 Honduras = ['Honduras']
-Hungary = ['Hungary', 'Budapest', 'Szeged']
+Hungary = ['Hungary', 'Budapest', 'Szeged', 'Endokrinológiai Onálló Osztály és Kutató Laboratórium',
+           'Sofia']
 Iceland = ['Iceland']
 India = ['India', '400014', 'Delhi', 'Maharashtra', 'Gandhi', 'Nagpur',
          'Hyderabad', 'Haryana', 'Uttarakhand', 'Manipur', 'Lucknow', '143117',
-         'Trivandrum', 'Kolkata', 'Jodhpur', 'Indi', 'Bagalkot']
+         'Trivandrum', 'Kolkata', 'Jodhpur', 'Indi', 'Bagalkot', 'Chandigarh',
+         'Himachal Pradesh', 'Uttar Pradesh', 'Calcutta']
 Indonesia = ['Indonesia']
 Iran = ['Iran', 'Tehran', 'ac.ir', 'IR']
 Iraq = ['Iraq']
-Ireland = ['Ireland', 'IRL', 'Dublin', 'Limerick', 'Wicklow']
+Ireland = ['Ireland', 'IRL', 'Dublin', 'Limerick', 'Wicklow', 'Belfast']
 Israel = ['Israel', 'Gertner Institute']
 Italy = ['Italy', 'Holy See', 'See of Rome', 'Vatican', 'Umbria', 'talian',
          'Pisa', 'Milan', 'Acta Biomedica', 'IRCCS', 'Brescia', 'Lodi', 'Rome',
@@ -114,10 +124,12 @@ Italy = ['Italy', 'Holy See', 'See of Rome', 'Vatican', 'Umbria', 'talian',
          'Padova', 'Fermo', 'Università', '.it', 'Negev', 'unibs.it',
          'University del Piemonte Orientale', 'ITA', 'Trento', 'Sicily',
          'taly', 'Policlinico di Bari', 'Torino', 'Piacenza', 'Firenze',
-         'Siena', 'Pavia']
+         'Siena', 'Pavia', 'Palermo']
 Jamaica = ['Jamaica']
 Japan = ['Japan', 'Japa', 'Yokohama', 'Tohoku', 'Keio',
-         'Furano Kyokai Hospital', 'Showa University']
+         'Furano Kyokai Hospital', 'Showa University', 'Dokkyo Medical University',
+         'Tokyo Medical and Dental University', 'Ube 755-8505', 'Sapporo City General Hospital',
+         'tiiri-tky@umin.ac.jp', 'Jichi Medical School Omiya Medical Center', 'ishioka Hospital']
 Jordan = ['Jordan', 'JO']
 Kazakhstan = ['Kazakhstan']
 Kenya = ['Kenya']
@@ -126,7 +138,7 @@ South_Korea = ['Korea, South', 'South Korea', 'Korea', 'KOREA', 'KOR',
 Kuwait = ['Kuwait']
 Kyrgyzstan = ['Kyrgyzstan']
 Latvia = ['Latvia']
-Lebanon = ['Lebanon', 'LBN']
+Lebanon = ['Lebanon', 'LBN', 'Liban']
 Liberia = ['Liberia']
 Liechtenstein = ['Liechtenstein']
 Lithuania = ['Lithuania']
@@ -156,7 +168,8 @@ Nicaragua = ['Nicaragua']
 Niger = ['Niger']
 Nigeria = ['Nigeria', 'igeria']
 Macedonia = ['Macedonia']
-Norway = ['Norway', 'Alta', 'Bergen', 'St Olavs University Hospital']
+Norway = ['Norway', 'Alta', 'Bergen', 'St Olavs University Hospital',
+          '2326 Hamar. helge.kapelrud@sykehuset-innlandet.n']
 Oman = ['Oman']
 Pakistan = ['Pakistan', 'Karachi', 'PAK', 'Faisalabad', 'Islamabad']
 Palestine = ['Palestinian']
@@ -165,23 +178,24 @@ Papua_New_Guinea = ['Papua New Guinea']
 Paraguay = ['Paraguay']
 Peru = ['Peru', 'Perú']
 Philippines = ['Philippines']
-Poland = ['Poland', 'Warszawie', 'Warsaw', 'Katowicach', 'Śląski']
+Poland = ['Poland', 'Warszawie', 'Warsaw', 'Katowicach', 'Śląski', 'ojciech.Mlynarski@umed.lodz.pl',
+          'Warszawski Uniwersytet Medyczny', 'Polska', 'Wrocław']
 Portugal = ['Portugal', 'Algarve', 'São João']
 Qatar = ['Qatar', 'Doha']
-Romania = ['Romania', 'ROU']
-Russia = ['Russia', 'Russian', 'Lazarski', 'Moscow']
+Romania = ['Romania', 'ROU', 'linica Oftalmologică Craiova']
+Russia = ['Russia', 'Russian', 'Lazarski', 'Moscow', 'outh Ural State Medical University']
 Rwanda = ['Rwanda']
-Scotland = ['Scotland', 'EH4 2XU']
+Scotland = ['Scotland', 'EH4 2XU', 'Falkirk', 'Glasgow']
 Saint_Lucia = ['Saint Lucia']
 Saint_Vincent = ['Saint Vincent and the Grenadines']
 Samoa = ['Samoa']
 San_Marino = ['San Marino']
 Saudi_Arabia = ['Saudi Arabia', 'SAU']
-Senegal = ['Senegal']
+Senegal = ['Senegal', 'Sénégal']
 Serbia = ['Serbia']
 Seychelles = ['Seychelles']
 Singapore = ['Singapore', '308232', 'Singapor', 'SG', 'Changi']
-Slovakia = ['Slovakia', 'SK']
+Slovakia = ['Slovakia', 'SK', 'Czechoslovakia', 'Slovak Republic', 'Bratislava']
 Slovenia = ['Slovenia']
 Somalia = ['Somalia']
 South_Africa = ['South Africa', 'Cape Town', 'Cape Town.', 'ac.za', 'ZA']
@@ -192,17 +206,19 @@ Sudan = ['Sudan']
 Suriname = ['Suriname']
 Sweden = ['Sweden', '.se', 'Karolinska institutet', 'Capio ASiH/SPSV Nacka',
           'Skånes universitetssjukhus', 'Stockholm', 'Uppsala', 'Solna',
-          'Swedish']
+          'Swedish', 'Lund', 'Dalby']
 Switzerland = ['Switzerland', 'Lausanne', 'CH', 'État de Vaud', 'St. Gallen',
-               'Genève', 'Zürich', 'Porrentruy']
+               'Genève', 'Zürich', 'Porrentruy', 'Bern', 'Luzern',
+               'Kantonsspital Luzern. Christoph.Henzen@ksl.c', 'Kantonsspital Basel',
+               'Kantonsspital Basel. jizakovic@uhbs.c', '1920 Martigny']
 Taiwan = ['Taiwan', 'Taiwan*', 'Taipei', 'ROC', 'Chang Gung']
 Tanzania = ['Tanzania']
 Thailand = ['Thailand', 'urapha University']
 Togo = ['Togo']
 Trinidad = ['Trinidad and Tobago', 'Trinidad', 'Tobago', 'TTO']
-Tunisia = ['Tunisia']
+Tunisia = ['Tunisia', 'Tunisie']
 Turkey = ['Turkey', 'Advisory Committee of the Ministry of Health of Turke',
-          'İstanbul', 'TURKEY']
+          'İstanbul', 'TURKEY', 'Türkiye']
 Uganda = ['Uganda']
 Ukraine = ['Ukraine']
 United_Arab_Emirates = ['United Arab Emirates', 'UAE', 'KSA', 'AE']
@@ -218,7 +234,7 @@ UK = ['UK', 'United Kingdom', 'Bermuda', 'Cayman Islands', 'Channel Islands',
       'St Thomas', 'Worcester', 'Brighton', 'Salford', 'CF15 7QQ',
       'Centre for Arts Therapies', 'HA1 3UJ', '*.nhs.uk', 'Wales',
       'Marlies.Ostermann@gstt.nhs.uk', 'Wiltshire', 'SO16 6YD',
-      'hartered Society of Physiotherapy', 'Ceres']
+      'hartered Society of Physiotherapy', 'Ceres', 'United Kingdo', 'Liverpool']
 Uruguay = ['Uruguay', 'Uruguay.']
 USA = ['USA', 'US', 'UNITED STATES', 'United States',
        'United States of America', 'America', 'Alabama', 'Alaska',
@@ -276,7 +292,9 @@ USA = ['USA', 'US', 'UNITED STATES', 'United States',
        'niversity Spine Center', '02115', 'arvard Medical School', 'Columbus',
        'eorgetown University', 'Lexington',
        'Jackson Laboratory for Genomics Medicine', 'Baltimore', '94143',
-       'Ann Arbor', '80045', '20850', '20871']
+       'Ann Arbor', '80045', '20850', '20871', 'arshop Institute for Longevity and Aging Studies and',
+       'Little Rock', 'Kan. sholcomb@kc.rr.co', 'jjosephs@slu.edu', 'East Lansing',
+       'Division of Endocrinology and Metabolism', 'Burlington']
 Grenada = ['Grenada']
 Uzbekistan = ['Uzbekistan']
 Venezuela = ['Venezuela']
@@ -302,12 +320,15 @@ Western_Sahara = ['Western Sahara']
 Sao_Tome = ['Sao Tome and Principe', 'Sao Tome', 'Principe']
 Yemen = ['Yemen']
 Puerto_Rico = ['Puerto Rico']
-Czech = ['Czech Republic', 'Czechia', 'CZ']
+Czech = ['Czech Republic', 'Czechia', 'CZ', 'Praha', 'Prague',
+         'iabetologickd centrum Interni kliniky IPVZ. rybka@bnzlin.c', 'Brno',
+         'spolupracující centrum SZO pro studium diabetu se sídlem ve Zlínĕ',
+         'Olomouc']
 West_Indies = ['West Indies']
 Unknown = ['International Journal of Biological Sciences', 'yoshiharu333',
            'Occupational and Environmental Medicine', 'JBJS',
            'Bauchner is Editor in Chief and Dr Fontanarosa is Executive'
-           ' Editor',
+           ' Editor', 'rom the Departments of Intensive Care',
            'journalist specialising in psychology and healthcare',
            'nrgasthep@springernature.com',
            'hemantkrsri@gmail.com', 'maja.baretic@kbc-zagreb.hr',
@@ -337,7 +358,7 @@ Unknown = ['International Journal of Biological Sciences', 'yoshiharu333',
            '6725', 'EU', '610000', 'epartment of Virology III',
            'Phone: +86 576 85120120', '117594',
            'Faculty of Medicine', '7103', 'raju.mukherjee@iisertirupati.ac.in',
-           'Diseases Department',
+           'Diseases Department', 'Clinical Hospital №2',
            'Joint Research Centre', 'Department of Medicine',
            'dpanzirer@helmsleytrust.org', 'ejabbour@mdanderson.org',
            '200020', 'Professor of Clinical Immunohaematology',
@@ -365,7 +386,12 @@ Unknown = ['International Journal of Biological Sciences', 'yoshiharu333',
            'robert.dietz@cuanschutz.edu',
            'niversity of Development Alternative',
            'Institutes of Biomedical Sciences', 'SA',
-           'nternal Medicine Dept', 'Hematology Section', 'Rion']
+           'nternal Medicine Dept', 'Hematology Section', 'Rion',
+           'epartment of Respiratory Medicine and', 'epartment of Pharmacology and Chemical Biology',
+           'chirlelm@aol.co', 'Biel. j.rutishauser@unibas.c', 'Endocrinology and Metabolism',
+           'ndocrinology Research Centre', 'rom the Departments of Anesthesiology',
+           'Mirjam.Christ-Crain@usb.ch', 'ivision of Haematology/Oncology', 'G. B', 'Md',
+           'rgreco@alice.i', 'Mestre em Saúde do Adulto']
 
 country_dict = {
     'Afghanistan': Afghanistan,
