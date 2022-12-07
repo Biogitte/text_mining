@@ -19,12 +19,8 @@ export NOTEBOOKS=$WORK_DIR/notebooks
 
 # Variables related to fetching PubMed abstracts
 export FETCH_ABSTRACTS=$SRC/fetch_abstracts.py
-export EMAIl='<TODO>'
+export EMAIl='TODO@TODO.dk'
 export QUERY='diabetes'
 
 # Variables related to data cleaning and preparation of PubMed abstracts
 export CLEAN_ABSTRACTS=$SRC/clean_abstracts.py
-export RAW_FILENAME=$DATA_RAW/20221206_diabetes.csv
-export CLEAN_FILENAME=$DATA_PROC/20221206_diabetes_clean.csv
-
-#TODO: preprocess the latest file
