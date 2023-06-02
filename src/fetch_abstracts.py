@@ -28,7 +28,6 @@ def pubmed_search(email: str, query: str):
     +------------+------------------------------------+
     |  Abstract  | Publication abstract.              |
     +------------+------------------------------------+
-
     Note: The retmax is set to 10.000 (i.e., the number of PubMed UIDs that will be included in the result).
     """
     Entrez.email = email
