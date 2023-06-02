@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 """This module contains synonyms for countries used in PubMed."""
 
-# -*- coding: utf-8 -*-
 Afghanistan = ['Afghanistan']
 Albania = ['Albania']
 Algeria = ['Algeria', 'Algérie', 'Algérie. Electronic address: mohammedhadi.bestaoui@univ-tlemcen.dz']
@@ -233,7 +232,7 @@ UK = ['UK', 'United Kingdom', 'Bermuda', 'Cayman Islands', 'Channel Islands',
       'Queen Mary Hospital',
       'St Thomas', 'Worcester', 'Brighton', 'Salford', 'CF15 7QQ',
       'Centre for Arts Therapies', 'HA1 3UJ', '*.nhs.uk', 'Wales',
-      'Marlies.Ostermann@gstt.nhs.uk', 'Wiltshire', 'SO16 6YD',
+      'Marlies.Ostermann@gstt.nhs.uk', 'Wiltshire', 'SO16 6YD', 'Cardiff',
       'hartered Society of Physiotherapy', 'Ceres', 'United Kingdo', 'Liverpool']
 Uruguay = ['Uruguay', 'Uruguay.']
 USA = ['USA', 'US', 'UNITED STATES', 'United States',
@@ -323,7 +322,7 @@ Puerto_Rico = ['Puerto Rico']
 Czech = ['Czech Republic', 'Czechia', 'CZ', 'Praha', 'Prague',
          'iabetologickd centrum Interni kliniky IPVZ. rybka@bnzlin.c', 'Brno',
          'spolupracující centrum SZO pro studium diabetu se sídlem ve Zlínĕ',
-         'Olomouc']
+         'Olomouc', 'Litomysl']
 West_Indies = ['West Indies']
 Unknown = ['International Journal of Biological Sciences', 'yoshiharu333',
            'Occupational and Environmental Medicine', 'JBJS',
@@ -391,7 +390,8 @@ Unknown = ['International Journal of Biological Sciences', 'yoshiharu333',
            'chirlelm@aol.co', 'Biel. j.rutishauser@unibas.c', 'Endocrinology and Metabolism',
            'ndocrinology Research Centre', 'rom the Departments of Anesthesiology',
            'Mirjam.Christ-Crain@usb.ch', 'ivision of Haematology/Oncology', 'G. B', 'Md',
-           'rgreco@alice.i', 'Mestre em Saúde do Adulto']
+           'rgreco@alice.i', 'Mestre em Saúde do Adulto', ' optic atrophy and deafness)."',
+           'nephrogenic diabetes insipidus']
 
 country_dict = {
     'Afghanistan': Afghanistan,
