@@ -37,7 +37,7 @@ def pubmed_search(email: str, query: str):
     search_results = Entrez.read(search_handle)
     pubmed_id = search_results['IdList']
     id_list = ','.join(pubmed_id)
-    print(f'The search found {len(id_list)} articles with query {query}.')
+    print(f'The search found {len(id_list)} articles with the query {query}.')
     fetch_handle = Entrez.efetch(db='pubmed', retmode='xml', id=id_list)
     fetch_results = Entrez.read(fetch_handle)
     headers = ['Author', 'Title', 'Year', 'Country', 'Journal', 'DOI',
