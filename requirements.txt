@@ -18,6 +18,7 @@ charset-normalizer==3.1.0
 click==8.1.3
 comm==0.1.3
 confection==0.0.4
+conllu==4.5.2
 contourpy==1.0.7
 cymem==2.0.7
 debugpy==1.6.7
@@ -25,6 +26,7 @@ decorator==5.1.1
 defusedxml==0.7.1
 docopt==0.6.2
 en-core-sci-lg @ https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v0.5.1/en_core_sci_lg-0.5.1.tar.gz#sha256=b64746e84ca033bf4158fb811d93d50cfd8f75fead85c7261e4e6119bacded22
+en-core-sci-md @ https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v0.5.1/en_core_sci_md-0.5.1.tar.gz#sha256=4485c7c3f2522eccf53e44069223d1162258de48fbad457419b38808b3a0ed20
 executing==1.2.0
 fastjsonschema==2.16.3
 fqdn==1.5.1
@@ -38,6 +40,7 @@ ipywidgets==8.0.6
 isoduration==20.11.0
 jedi==0.18.2
 Jinja2==3.1.2
+joblib==1.2.0
 jsonpointer==2.3
 jsonschema==4.17.3
 jupyter==1.0.0
@@ -60,6 +63,8 @@ nbclient==0.7.4
 nbconvert==7.3.1
 nbformat==5.8.0
 nest-asyncio==1.5.6
+nltk==3.8.1
+nmslib==2.1.1
 notebook==6.5.4
 notebook_shim==0.2.3
 num2words==0.5.12
@@ -81,10 +86,12 @@ psutil==5.9.5
 ptyprocess==0.7.0
 pure-eval==0.2.2
 py4j==0.10.9.7
+pybind11==2.6.1
 pycparser==2.21
 pydantic==1.10.7
 Pygments==2.15.1
 pyrsistent==0.19.3
+pysbd==0.3.4
 pyspark==3.4.0
 python-dateutil==2.8.2
 python-json-logger==2.0.7
@@ -93,9 +100,13 @@ PyYAML==6.0
 pyzmq==25.0.2
 qtconsole==5.4.2
 QtPy==2.3.1
+regex==2023.3.23
 requests==2.28.2
 rfc3339-validator==0.1.4
 rfc3986-validator==0.1.1
+scikit-learn==1.2.2
+scipy==1.10.1
+scispacy==0.5.2
 Send2Trash==1.8.0
 six==1.16.0
 smart-open==6.3.0
@@ -108,6 +119,7 @@ srsly==2.4.6
 stack-data==0.6.2
 terminado==0.17.1
 thinc==8.1.9
+threadpoolctl==3.1.0
 tinycss2==1.2.1
 tornado==6.3.1
 tqdm==4.65.0
