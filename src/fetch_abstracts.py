@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+"""Module to fetch PubMed abstracts based on a query"""
 from Bio import Entrez
 import csv
 import time
