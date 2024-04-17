@@ -30,7 +30,7 @@ en-core-sci-md @ https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v0.
 executing==1.2.0
 fastjsonschema==2.16.3
 fqdn==1.5.1
-idna==3.4
+idna==3.7
 importlib-metadata==6.6.0
 importlib-resources==5.12.0
 ipykernel==6.22.0
