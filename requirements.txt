@@ -88,7 +88,7 @@ pure-eval==0.2.2
 py4j==0.10.9.7
 pybind11==2.6.1
 pycparser==2.21
-pydantic==1.10.7
+pydantic==1.10.13
 Pygments==2.15.1
 pyrsistent==0.19.3
 pysbd==0.3.4
