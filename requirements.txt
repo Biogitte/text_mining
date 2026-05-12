@@ -56,7 +56,7 @@ kafka-python==2.0.2
 langcodes==3.3.0
 MarkupSafe==2.1.2
 matplotlib-inline==0.1.6
-mistune==2.0.5
+mistune==3.2.1
 murmurhash==1.0.9
 nbclassic==0.5.5
 nbclient==0.7.4
