@@ -89,7 +89,7 @@ py4j==0.10.9.7
 pybind11==2.6.1
 pycparser==2.21
 pydantic==1.10.13
-Pygments==2.15.1
+Pygments==2.20.0
 pyrsistent==0.19.3
 pysbd==0.3.4
 pyspark==3.4.0
