@@ -8,7 +8,7 @@ attrs==23.1.0
 backcall==0.2.0
 beautifulsoup4==4.12.2
 biopython==1.81
-bleach==6.0.0
+bleach==6.4.0
 blis==0.7.9
 bokeh==3.8.2
 catalogue==2.0.8
